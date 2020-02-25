@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Click a button to change the image.</h1>
+    <div class="buttons">
+      <button onclick='changeImg(1)'> 1 </button>
+      <button onclick='changeImg(2)'> 2 </button>
+      <button onclick='changeImg(3)'> 3 </button>
+    </div>
+
+
+
+    <img id="curImage" src="" alt="">
+
+    <p id="caption"></p>
+
+    </body>
+    <script>
+      const currentSlide = document.getElementById('curImage');
+      const currentCaption = document.getElementById('caption');
+      var imgs = [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg"
+      ];
+      function changeImg(index){
+        currentSlide.src = imgs[index-1];
+        currentCaption.innerHTML = 'Image '+index;
+      }
+      </script>
+</html>
