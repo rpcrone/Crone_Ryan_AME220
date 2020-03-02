@@ -1,0 +1,239 @@
+body{
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.section1{
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  padding: 0;
+  border-bottom: 5px solid black;
+  background-color: #59919B;
+}
+
+
+
+.fName, .lName{
+  height: 100%;
+  flex: 4;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+
+
+}
+
+.fName h1, .lName h1{
+  flex: 1;
+  margin: auto;
+  padding: 0;
+  background-color: #59919B;
+  font-size: 48px;
+
+}
+
+
+
+.contactInfo{
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+}
+
+.contactInfo a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.contactInfo a:hover{
+  color: #01353F;
+}
+
+.contactInfo h4{
+  margin: 0;
+  padding: 0;
+}
+
+/************* obective section ********/
+.objective{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px;
+}
+
+.objectiveP{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.objectiveP p{
+  padding: 25px;
+}
+
+.objectiveP span{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+.imgDiv{
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+
+
+}
+
+.imgDiv img{
+  width: auto;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+
+}
+
+/**********experiences section**********/
+
+.experiences span{
+  font-weight: bold;
+}
+
+.experiences li{
+  padding: 25px;
+}
+
+/**********education section**********/
+
+h1{
+  font-size: 36px;
+  font-weight: bold;
+  color: #01353F;
+  text-align: center;
+  background-color: #59919B;
+  margin: 0;
+  padding: 10px;
+}
+
+
+#accordionContainer{
+  width: 100%;
+
+
+}
+
+
+#accordion input{
+  display: none;
+}
+
+#accordion label{
+  cursor: pointer;
+  border-bottom: 3px solid #01353F;
+  width: 100%;
+  display: block;
+
+  height: auto;
+  text-align: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color:#59919B;
+  font-size: 36px;
+  font-weight: bold;
+  color: #01353F;
+
+}
+
+
+#accordion input:checked + label {
+	background: #01353F;
+
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: black;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+
+#accordion input:checked ~ article {
+
+	height: auto;
+
+}
+
+.education{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.education table{
+  padding: 25px;
+}
+
+.education h1{
+  width: 100%;
+  border-right: 1px solid white;
+}
+
+.header td{
+  font-weight: bold;
+}
+
+td{
+  padding: 5px;
+}
+.education td{
+  border: 1px solid black;
+}
+
+
+
+
+
+
+
+/**********references section**********/
+
+.references{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.references h1{
+  width: 100%;
+}
+
+.references li{
+  padding: 10px;
+}
